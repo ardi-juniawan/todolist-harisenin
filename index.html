@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>To Do List - ArdiJuniawan Corp</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-wrapper">
+            <div class="title">
+                <h1>To Do List</h1>
+            </div>
+            <div class="inputfield">
+                <input type="text" placeholder="Add Task" id="inputtask">
+                <button type="button" id="addbutton" onclick="tambahTask()">Add</button>
+            </div>
+            <div class="prioritas">
+                <input type="radio" name="prioritas" id="prioritas" value="high">High
+                <input type="radio" name="prioritas" id="prioritas" value="medium">Medium
+                <input type="radio" name="prioritas" id="prioritas" value="low">Low
+            </div>
+            <div class="tombolhapus">
+                <button type="button" onclick="hapusSemuaList()">Hapus Semua Task</button>
+                <button type="button" onclick="hapusDoneList()">Hapus Task Selesai</button>
+            </div>
+            <div class="list">
+                <div class="list-wrap">
+                    <div class="list-belum-selesai">
+                        <h3>Belum Selesai</h3>
+                        <ol id="itemListUndone">
+                            <!--List yang belum lese-->
+                        </ol>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="list-sudah-selesai">
+                        <h3>Selesai</h3>
+                        <ol id="itemListDone">
+                            <!--List yang udah lese-->
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
